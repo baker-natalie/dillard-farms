@@ -20,17 +20,58 @@
 
 	<div class="menu">
   		<ul>
-    		<a href="#"><li>HOME</li></a>
-    		<a href="#"><li>ABOUT</li></a>
-    		<a href="#"><li>LOCATION</li></a>
-    		<a href="#"><li>CONTACT</li></a>
+    		<a href="#"><li class="home-link">HOME</li></a>
+    		<a href="#"><li class="about-link">ABOUT</li></a>
+    		<a href="#"><li class="location-link">LOCATION</li></a>
+    		<a href="#"><li class="contact-link">CONTACT</li></a>
   		</ul>
 	</div>
 
-	<div class="info-box home"></div>
-	<div class="info-box about"></div>
-	<div class="info-box location"></div>
-	<div class="info-box contact"></div>
+	<div class="info-box home">
+		<div class="home-content">
+			<h1>Welcome to Dillard Farms</h1>
+			<img src="http://loremflickr.com/300/450/nature" />
+			<div class="home-text"><p>Bloody Peasant! Found them? In Mercia?! The coconut's tropical! Bring her forward! Well, I didn't vote for you.
+				<br />
+			How do you know she is a witch? I have to push the pram a lot. Well, she turned me into a newt. You don't frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits!
+				<br />
+			The Knights Who Say Ni demand a sacrifice! We found them. Well, how'd you become king, then? She looks like one. And the hat. She's a witch!</p></div>
+		</div>
+	</div>
+	<div class="info-box about">
+		<div class="about-content">
+			<h1>About</h1>
+			<div class="about-text"<p>How do you know she is a witch? Burn her anyway! She looks like one. We shall say 'Ni' again to you, if you do not appease us. We shall say 'Ni' again to you, if you do not appease us. Did you dress her up like this?
+				<br />
+			Be quiet! No, no, no! Yes, yes. A bit. But she's got a wart. What do you mean? Be quiet! I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave before I am forced to taunt you a second time!
+			<br />
+			I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave before I am forced to taunt you a second time! Burn her!</p></div>
+		</div>
+	</div>
+	<div class="info-box location">
+		<div class="location-content">
+			<h1>Location</h1>
+			<div class="map"><p>Map goes here</p></div>
+			<div class="location-text"><p>Ah, now we see the violence inherent in the system! …Are you suggesting that coconuts migrate? Bloody Peasant! How do you know she is a witch?
+				<br />
+			The nose? What a strange person. Well, what do you want? Burn her anyway! Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods.
+				<br />
+			Well, what do you want? …Are you suggesting that coconuts migrate? Camelot! Ni! Ni! Ni! Ni! Burn her!
+				<br />
+			Burn her anyway! Camelot! Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! On second thoughts, let's not go there. It is a silly place. Where'd you get the coconuts?</p></div>
+		</div>
+	</div>
+	<div class="info-box contact">
+		<div class="contact-text">
+			<h1>Contact</h1>
+			<ul class="contact-list">
+				<li>123 Main St<br>Town, State, 00000</li>
+				<li>555-555-5555</li>
+				<li><a href="mailto:person@#.com">person@website.com</a></li>
+				<li>other contact info</li>
+			</ul>
+		</div>
+	</div>
 	<script type="text/javascript">
 		$( ".cross" ).hide();
 		$( ".menu" ).hide();
@@ -43,6 +84,48 @@
 
 		$( ".cross" ).click(function() {
 			$( ".menu" ).slideToggle( "slow", function() {
+				$( ".cross" ).hide();
+				$( ".hamburger" ).show();
+			});
+		});
+
+		$(".about").hide();
+		$(".location").hide();
+		$(".contact").hide();
+		$(".about-link").click(function() {
+			$(".menu").slideToggle("slow", function() {
+				$(".home").hide();
+				$(".location").hide();
+				$(".contact").hide();
+				$(".about").show();
+				$( ".cross" ).hide();
+				$( ".hamburger" ).show();
+			});
+		});
+		$(".location-link").click(function() {
+			$(".menu").slideToggle("slow", function() {
+				$(".home").hide();
+				$(".about").hide();
+				$(".contact").hide();
+				$(".location").show();
+				$( ".cross" ).hide();
+				$( ".hamburger" ).show();
+			});
+		});$(".contact-link").click(function() {
+			$(".menu").slideToggle("slow", function() {
+				$(".home").hide();
+				$(".location").hide();
+				$(".about").hide();
+				$(".contact").show();
+				$( ".cross" ).hide();
+				$( ".hamburger" ).show();
+			});
+		});$(".home-link").click(function() {
+			$(".menu").slideToggle("slow", function() {
+				$(".about").hide();
+				$(".location").hide();
+				$(".contact").hide();
+				$(".home").show();
 				$( ".cross" ).hide();
 				$( ".hamburger" ).show();
 			});

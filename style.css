@@ -66,18 +66,42 @@ button {
   width: 100%;
 }
 
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
 .home {
   background-color: #120D0A;
+  color: #ffffff;
 }
 
 .about {
   background-color: #1C2510;
+  color: #ffffff;
 }
 
 .location {
   background-color: #ffffff;
+  color: #120D0A;
 }
 
 .contact {
   background-color: #F1C00B;
+  color: #120D0A
+  padding: 25px;
+}
+.contact-text {
+  background-color: #ffffff;
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contact-list {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
 }

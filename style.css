@@ -1,0 +1,83 @@
+body{
+  font-family: 'Alegreya', serif;
+	margin:0;
+	width:100%;
+	height:100vh;
+}
+header{
+	width:100%; 
+  height: 110px;
+	background-image: url("img/df-page-logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+	line-height:60px;
+}
+button {
+  color: #1C2510;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  left:0;
+  line-height:45px;
+  padding:75px 15px 0px 12px;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  left:0;
+  padding:79px 15px 0px 13px;
+  border:0;
+  font-size: 3.2em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#1C2510;  position:absolute; text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#120D0A 1px solid;}
+.menu li:hover{display: block;    background:#1C2510; padding:15px 0 15px 0; border-bottom:#120D0A 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:white;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+
+.info-box {
+  position: absolute;
+  top: 110px;
+  height: calc(100% - 110px);
+  width: 100%;
+}
+
+.home {
+  background-color: #120D0A;
+}
+
+.about {
+  background-color: #1C2510;
+}
+
+.location {
+  background-color: #ffffff;
+}
+
+.contact {
+  background-color: #F1C00B;
+}

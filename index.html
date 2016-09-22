@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Homepage for Dillard Farms">
+	<meta name="keywords" content="Dillard Farms, Huntsville AL">
+	<meta name="author" content="Natalie Baker">
+	<title>Dillard Farms</title>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+</head>
+<body>
+	<header>
+  		<button class="hamburger">&#9776;</button>
+  		<button class="cross">&#735;</button>
+	</header>
+
+	<div class="menu">
+  		<ul>
+    		<a href="#"><li>HOME</li></a>
+    		<a href="#"><li>ABOUT</li></a>
+    		<a href="#"><li>LOCATION</li></a>
+    		<a href="#"><li>CONTACT</li></a>
+  		</ul>
+	</div>
+
+	<div class="info-box home"></div>
+	<div class="info-box about"></div>
+	<div class="info-box location"></div>
+	<div class="info-box contact"></div>
+	<script type="text/javascript">
+		$( ".cross" ).hide();
+		$( ".menu" ).hide();
+		$( ".hamburger" ).click(function() {
+			$( ".menu" ).slideToggle( "slow", function() {
+				$( ".hamburger" ).hide();
+				$( ".cross" ).show();
+			});
+		});
+
+		$( ".cross" ).click(function() {
+			$( ".menu" ).slideToggle( "slow", function() {
+				$( ".cross" ).hide();
+				$( ".hamburger" ).show();
+			});
+		});
+	</script>
+</body>
+</html>

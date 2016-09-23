@@ -6,7 +6,7 @@ body{
 }
 header{
 	width:100%; 
-  height: 110px;
+  height: 115px;
 	background-image: url("img/df-page-logo.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -22,7 +22,7 @@ button {
   top:0;
   left:0;
   line-height:45px;
-  padding:75px 15px 0px 12px;
+  padding:8px 15px 0px 12px;
   border:0;
   font-size:1.4em;
   font-weight:bold;
@@ -35,7 +35,7 @@ button {
   position:absolute;
   top:0px;
   left:0;
-  padding:79px 15px 0px 13px;
+  padding:10px 15px 0px 13px;
   border:0;
   font-size: 3.2em;
   font-weight:bold;
@@ -43,7 +43,7 @@ button {
   outline:none;
   z-index:10000000000000;
 }
-.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#1C2510;  position:absolute; text-align:center;}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:500px; max-width: 100%; background:#1C2510;  position:absolute; text-align:center;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#120D0A 1px solid;}
 .menu li:hover{display: block;    background:#1C2510; padding:15px 0 15px 0; border-bottom:#120D0A 1px solid;}
@@ -61,8 +61,8 @@ button {
 
 .info-box {
   position: absolute;
-  top: 110px;
-  height: calc(100% - 110px);
+  top: 115px;
+  height: calc(100% - 115px);
   width: 100%;
 }
 
@@ -75,15 +75,82 @@ h1 {
   background-color: #120D0A;
   color: #ffffff;
 }
+.home-content {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  max-width: 100%;
+}
+.home-image {
+  max-width: 100%;
+}
+.home-text {
+  background-color: #120D0A;
+  width: 500px;
+  max-width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
 
 .about {
   background-color: #1C2510;
   color: #ffffff;
 }
+.about-content {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-image {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  background-color: red;
+  margin-bottom: 10px;
+}
+.about-text {
+  width: 100%;
+  background-color: #1C2510;
+  text-align: center;
+}
 
 .location {
+  border-top: 2px solid #1C2510;
   background-color: #ffffff;
   color: #120D0A;
+}
+.location-content {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.map {
+  width: 450px;
+  max-width: 100%;
+  height: 450px;
+  left: 0;
+  background-color: red;
+  margin: 5px;
+}
+.location-text {
+  width: 450px;
+  max-width: 100%;
+  right: 0;
+  margin 5px;
+  padding-left: 10px;
 }
 
 .contact {
@@ -104,4 +171,14 @@ h1 {
   list-style-image: none;
   margin: 0;
   padding: 0;
+}
+.contact-image {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  bottom: 0;
 }

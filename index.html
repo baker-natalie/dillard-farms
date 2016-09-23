@@ -14,8 +14,8 @@
 </head>
 <body>
 	<header>
-  		<button class="hamburger">&#9776;</button>
-  		<button class="cross">&#735;</button>
+  		<button class="menu-open">menu</button>
+  		<button class="menu-close">close</button>
 	</header>
 
 	<div class="menu">
@@ -30,7 +30,7 @@
 	<div class="info-box home">
 		<div class="home-content">
 			<h1>Welcome to Dillard Farms</h1>
-			<img class="home-image" src="http://lorempixel.com/450/450/nature" />
+			<img class="home-image" src="http://lorempixel.com/450/400/nature" />
 			<div class="home-text"><p>Bloody Peasant! Found them? In Mercia?! The coconut's tropical! Bring her forward! Well, I didn't vote for you.
 				<br />
 			How do you know she is a witch? I have to push the pram a lot. Well, she turned me into a newt. You don't frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits!
@@ -76,19 +76,19 @@
 		<div class="footer"><p>&copy Natalie Baker 2016</p>
 	</div>
 	<script type="text/javascript">
-		$( ".cross" ).hide();
+		$( ".menu-close" ).hide();
 		$( ".menu" ).hide();
-		$( ".hamburger" ).click(function() {
+		$( ".menu-open" ).click(function() {
 			$( ".menu" ).slideToggle( "slow", function() {
-				$( ".hamburger" ).hide();
-				$( ".cross" ).show();
+				$( ".menu-open" ).hide();
+				$( ".menu-close" ).show();
 			});
 		});
 
-		$( ".cross" ).click(function() {
+		$( ".menu-close" ).click(function() {
 			$( ".menu" ).slideToggle( "slow", function() {
-				$( ".cross" ).hide();
-				$( ".hamburger" ).show();
+				$( ".menu-close" ).hide();
+				$( ".menu-open" ).show();
 			});
 		});
 
@@ -101,8 +101,8 @@
 				$(".location").hide();
 				$(".contact").hide();
 				$(".about").show();
-				$( ".cross" ).hide();
-				$( ".hamburger" ).show();
+				$( ".menu-close" ).hide();
+				$( ".menu-open" ).show();
 			});
 		});
 		$(".location-link").click(function() {
@@ -111,8 +111,8 @@
 				$(".about").hide();
 				$(".contact").hide();
 				$(".location").show();
-				$( ".cross" ).hide();
-				$( ".hamburger" ).show();
+				$( ".menu-close" ).hide();
+				$( ".menu-open" ).show();
 			});
 		});$(".contact-link").click(function() {
 			$(".menu").slideToggle("slow", function() {
@@ -120,8 +120,8 @@
 				$(".location").hide();
 				$(".about").hide();
 				$(".contact").show();
-				$( ".cross" ).hide();
-				$( ".hamburger" ).show();
+				$( ".menu-close" ).hide();
+				$( ".menu-open" ).show();
 			});
 		});$(".home-link").click(function() {
 			$(".menu").slideToggle("slow", function() {
@@ -129,8 +129,8 @@
 				$(".location").hide();
 				$(".contact").hide();
 				$(".home").show();
-				$( ".cross" ).hide();
-				$( ".hamburger" ).show();
+				$( ".menu-close" ).hide();
+				$( ".menu-open" ).show();
 			});
 		});
 	</script>

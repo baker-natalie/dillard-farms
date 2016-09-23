@@ -6,44 +6,34 @@ body{
 }
 header{
 	width:100%; 
-  height: 115px;
+  height: 113px;
 	background-image: url("img/df-page-logo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 	line-height:60px;
+  border-bottom: 2px solid #1C2510;
 }
 button {
+  background-color: #ffffff;
   color: #1C2510;
-}
-.hamburger{
-  background:none;
-  position:absolute;
-  top:0;
-  left:0;
-  line-height:45px;
-  padding:8px 15px 0px 12px;
-  border:0;
-  font-size:1.4em;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
+  position: absolute;
+  top: 113px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
   z-index:10000000000000;
+  border-radius: 6%;
+  outline: none;
+  border: 0;
+  border-top: 2px solid #1C2510;
 }
-.cross{
-  background:none;
-  position:absolute;
-  top:0px;
-  left:0;
-  padding:10px 15px 0px 13px;
-  border:0;
-  font-size: 3.2em;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}
-.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:500px; max-width: 100%; background:#1C2510;  position:absolute; text-align:center;}
+
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#1C2510; padding-top: 20px; position:absolute; text-align:center;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#120D0A 1px solid;}
 .menu li:hover{display: block;    background:#1C2510; padding:15px 0 15px 0; border-bottom:#120D0A 1px solid;}
@@ -69,6 +59,7 @@ button {
 h1 {
   width: 100%;
   text-align: center;
+  padding-top: 20px;
 }
 
 .home {
@@ -124,7 +115,6 @@ h1 {
 }
 
 .location {
-  border-top: 2px solid #1C2510;
   background-color: #ffffff;
   color: #120D0A;
 }
